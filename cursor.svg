@@ -1,0 +1,12 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <filter id="shadow" x="-2" y="-2" width="40" height="40">
+    <feDropShadow dx="1" dy="1" stdDeviation="1.5" flood-opacity="0.3"/>
+  </filter>
+  <!-- Standard Arrow Shape -->
+  <path d="M7 2L24 18L15 18L19 28L15 30L11 20L5 26V2Z" 
+        fill="#f97316" 
+        stroke="white" 
+        stroke-width="1.5" 
+        stroke-linejoin="round"
+        filter="url(#shadow)"/>
+</svg>
