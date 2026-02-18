@@ -175,7 +175,7 @@ const AiGenerator = () => {
 
                 <div className="flex items-center gap-2 italic">
                     <Sparkles className="text-orange-500" size={20} />
-                    <span className="font-serif font-black text-xl text-slate-800">DesignStudio <span className="text-orange-500">AI</span></span>
+                    <span className="font-serif font-black text-xl text-slate-800">AuraDesign <span className="text-orange-500">AI</span></span>
                 </div>
 
                 <div className="w-40 flex justify-end">

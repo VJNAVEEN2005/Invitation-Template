@@ -31,7 +31,7 @@ const LandingPage = () => {
             <div className="w-10 h-10 bg-[var(--color-accent)] rounded-full flex items-center justify-center shadow-lg shadow-orange-500/20 transform hover:rotate-12 transition-transform">
                 <Palette className="text-white w-5 h-5" />
             </div>
-            <span className="text-2xl font-serif font-black tracking-tighter text-[var(--color-dark)]">DesignStudio <span className="text-orange-500">AI</span></span>
+            <span className="text-2xl font-serif font-black tracking-tighter text-[var(--color-dark)]">AuraDesign <span className="text-orange-500">AI</span></span>
         </div>
         
         <div className="hidden md:flex items-center gap-6">
@@ -121,7 +121,7 @@ const LandingPage = () => {
 
       {/* Footer */}
       <footer className="container mx-auto px-6 py-12 border-t border-orange-100/50 flex flex-col md:flex-row justify-between items-center gap-6">
-        <div className="text-sm font-bold text-slate-400 uppercase tracking-widest">© 2026 DesignStudio AI. All rights reserved.</div>
+        <div className="text-sm font-bold text-slate-400 uppercase tracking-widest">© 2026 AuraDesign AI. All rights reserved.</div>
         <div className="flex gap-10 text-sm font-black text-slate-600 uppercase tracking-tighter">
             <Link to="/privacy" className="hover:text-orange-500 transition-colors">Privacy</Link>
             <Link to="/terms" className="hover:text-orange-500 transition-colors">Terms</Link>

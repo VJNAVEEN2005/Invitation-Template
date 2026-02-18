@@ -97,7 +97,7 @@ const Dashboard = () => {
                 <div className="w-8 h-8 bg-[var(--color-accent)] rounded-full flex items-center justify-center text-white font-serif font-bold text-xl shadow-lg shadow-orange-200 group-hover:scale-110 transition-transform">
                     <Palette size={16} />
                 </div>
-                <span className="text-xl font-serif font-bold text-[var(--color-dark)] tracking-tight group-hover:text-[var(--color-accent)] transition-colors">DesignStudio.</span>
+                <span className="text-xl font-serif font-bold text-[var(--color-dark)] tracking-tight group-hover:text-[var(--color-accent)] transition-colors">AuraDesign.</span>
              </Link>
         </div>
 

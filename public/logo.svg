@@ -1,0 +1,17 @@
+<svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="logo-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f97316" />
+      <stop offset="100%" stop-color="#fbbf24" />
+    </linearGradient>
+  </defs>
+  <circle cx="50" cy="50" r="45" fill="white" />
+  <circle cx="50" cy="50" r="40" fill="url(#logo-gradient)" />
+  <path d="M35 50C35 41.7157 41.7157 35 50 35C58.2843 35 65 41.7157 65 50C65 58.2843 58.2843 65 50 65C41.7157 65 35 58.2843 35 50Z" fill="white" fill-opacity="0.3" />
+  <path d="M45 40L55 60M55 40L45 60" stroke="white" stroke-width="6" stroke-linecap="round" />
+  <path d="M42 32L45 35L42 38" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M58 32L55 35L58 38" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M50 45V55" stroke="white" stroke-width="2" stroke-linecap="round" />
+  <circle cx="70" cy="30" r="8" fill="#fbbf24" />
+  <path d="M70 26V34M66 30H74" stroke="white" stroke-width="2" stroke-linecap="round" />
+</svg>

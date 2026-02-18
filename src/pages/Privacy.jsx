@@ -11,7 +11,7 @@ const Privacy = () => {
           <div className="w-10 h-10 bg-[var(--color-accent)] rounded-full flex items-center justify-center shadow-lg shadow-orange-500/20">
             <Palette className="text-white w-5 h-5" />
           </div>
-          <span className="text-2xl font-serif font-black tracking-tighter text-[var(--color-dark)]">DesignStudio <span className="text-orange-500">AI</span></span>
+          <span className="text-2xl font-serif font-black tracking-tighter text-[var(--color-dark)]">AuraDesign <span className="text-orange-500">AI</span></span>
         </Link>
         <Link to="/" className="flex items-center gap-2 text-sm font-bold text-slate-500 hover:text-orange-500 transition-colors">
           <ArrowLeft size={16} />
@@ -27,7 +27,7 @@ const Privacy = () => {
         <div className="space-y-10 text-slate-600 leading-relaxed">
           <section>
             <h2 className="text-2xl font-serif font-black text-[var(--color-dark)] mb-4">1. We Do Not Collect Any Data</h2>
-            <p>DesignStudio AI is a fully client-side application. <strong>We do not collect, store, or transmit any of your personal data.</strong> There are no servers, no databases, and no analytics. Everything you do in this app stays entirely on your device.</p>
+            <p>AuraDesign AI is a fully client-side application. <strong>We do not collect, store, or transmit any of your personal data.</strong> There are no servers, no databases, and no analytics. Everything you do in this app stays entirely on your device.</p>
           </section>
 
           <section>
@@ -65,7 +65,7 @@ const Privacy = () => {
 
       {/* Footer */}
       <footer className="container mx-auto px-6 py-12 border-t border-orange-100/50 flex flex-col md:flex-row justify-between items-center gap-6">
-        <div className="text-sm font-bold text-slate-400 uppercase tracking-widest">© 2026 DesignStudio AI. All rights reserved.</div>
+        <div className="text-sm font-bold text-slate-400 uppercase tracking-widest">© 2026 AuraDesign AI. All rights reserved.</div>
         <div className="flex gap-10 text-sm font-black text-slate-600 uppercase tracking-tighter">
           <Link to="/privacy" className="text-orange-500">Privacy</Link>
           <Link to="/terms" className="hover:text-orange-500 transition-colors">Terms</Link>
