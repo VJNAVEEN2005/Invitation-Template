@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;0,900;1,400&family=Playfair+Display:wght@400;600;700;800&display=swap');
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+body {
+    font-family: 'Merriweather', serif;
+    background-color: #fcfcfc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.invitation-container {
+    width: 100%;
+    height: 100%;
+    max-width: 794px; /* A4 Width */
+    max-height: 1123px; /* A4 Height */
+    background-color: #fffff0; /* Ivory */
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    padding: 40px; /* Space for border */
+}
+
+/* Ornamental Border using CSS Mask/Image or pseudo-elements 
+   We will simulate the red scallop border with a repeating background image 
+   on a pseudo-element or container.
+*/
+/* Ornamental Border - Refactored for HTML2Canvas Compatibility */
+/* Instead of border-image (which fails export), we use absolute strips */
+.ornamental-border-container {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.border-top, .border-bottom, .border-left, .border-right {
+    position: absolute;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cpath fill='%23C00' d='M20 0c5 0 10 5 10 10s-5 10-10 10S10 15 10 10 15 0 20 0zm0 40c-5 0-10-5-10-10s5-10 10-10 10 5 10 10-5 10-10 10zM0 20c0-5 5-10 10-10s10 5 10 10-5 10-10 10S0 25 0 20zm40 0c0 5-5 10-10 10s-10-5-10-10 5-10 10-10 10 5 10 10z'/%3E%3C/svg%3E");
+    background-size: 30px 30px; /* Adjust size to match previous look */
+}
+
+/* Horizontal Strips */
+.border-top {
+    top: 0; left: 0; right: 0;
+    height: 30px;
+    background-repeat: repeat-x; /* repeat-x supports 'round' in modern browsers but 'repeat' is safer fallback */
+    background-position: center;
+}
+.border-bottom {
+    bottom: 0; left: 0; right: 0;
+    height: 30px;
+    background-repeat: repeat-x;
+    background-position: center;
+}
+
+/* Vertical Strips */
+.border-left {
+    top: 0; bottom: 0; left: 0;
+    width: 30px;
+    background-repeat: repeat-y;
+    background-position: center;
+}
+.border-right {
+    top: 0; bottom: 0; right: 0;
+    width: 30px;
+    background-repeat: repeat-y;
+    background-position: center;
+}
+
+/* Corners (Optional for perfection, since strips overlap) */
+.border-corner-tl, .border-corner-tr, .border-corner-bl, .border-corner-br {
+    position: absolute;
+    width: 30px; height: 30px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Ccircle cx='20' cy='20' r='18' fill='%23C00'/%3E%3C/svg%3E"); /* Simple circle for corner */
+    background-size: cover;
+    z-index: 2;
+}
+.border-corner-tl { top: 0; left: 0; }
+.border-corner-tr { top: 0; right: 0; }
+.border-corner-bl { bottom: 0; left: 0; }
+.border-corner-br { bottom: 0; right: 0; }
+
+/* Add a second internal line for detail */
+.invitation-container::after {
+    content: '';
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    right: 25px;
+    bottom: 25px;
+    border: 2px solid #8B0000;
+    pointer-events: none;
+}
+
+.content-wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    z-index: 2;
+    padding: 20px;
+    gap: 15px;
+    color: #4a0404; /* Dark Red/Brown base */
+}
+
+/* Logo */
+.university-logo {
+    width: 80px; /* Reduced to fit better */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Header */
+.university-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    color: #8B0000; /* Dark Red */
+    font-weight: 800;
+    margin: 0;
+    line-height: 1.2;
+    text-transform: uppercase;
+}
+
+.university-loc {
+    font-size: 14px;
+    color: #000;
+    font-weight: 700;
+    margin: 5px 0 15px 0;
+}
+
+/* Host Section */
+.host-section p {
+    font-size: 16px;
+    color: #8B0000;
+    font-weight: 600;
+    margin: 5px 0;
+}
+
+.host-name {
+    font-size: 18px;
+    color: #8B0000;
+    font-weight: 800;
+    margin: 5px 0;
+}
+
+.cordially {
+    font-size: 16px;
+    color: #8B0000;
+    font-weight: 600;
+    margin: 5px 0;
+}
+
+.ceremony-name {
+    font-size: 18px;
+    color: #8B0000;
+    font-weight: 800;
+    margin: 5px 0 15px 0;
+}
+
+/* Event Title */
+.event-name {
+    font-size: 26px;
+    color: #5d0f0f; /* Even darker red/brown */
+    font-weight: 900;
+    margin: 5px 0;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 0px rgba(0,0,0,0.1);
+}
+
+.academic-year {
+    font-size: 18px;
+    color: #5d0f0f;
+    font-weight: 800;
+    margin: 5px 0 20px 0;
+    text-transform: uppercase;
+}
+
+/* Details */
+.details-section p {
+    font-size: 16px;
+    color: #5c0b0b;
+    font-weight: 700;
+    margin: 5px 0;
+}
+
+.bold {
+    font-weight: 900;
+}
+
+.red-text {
+    color: #8B0000;
+}
+
+/* Chief Guest */
+.guest-section {
+    margin-top: 20px;
+}
+
+.guest-label {
+    font-family: 'Playfair Display', serif; /* Or a more decorative font */
+    font-size: 24px;
+    font-weight: 900;
+    color: #000;
+    margin: 0 0 10px 0;
+    letter-spacing: 1px;
+}
+
+.guest-name {
+    color: #8B0000;
+    font-size: 28px;
+    font-weight: 900;
+    margin: 10px 0;
+    text-transform: uppercase;
+}
+
+.guest-role {
+    font-size: 14px;
+    color: #8B0000;
+    font-weight: 700;
+    margin: 5px 0;
+}
+
+.guest-action {
+    font-size: 14px;
+    color: #8B0000;
+    font-weight: 400; /* Regular */
+    margin: 15px 0 0 0;
+    line-height: 1.4;
+}
+
+/* Footer */
+.footer-section {
+    margin-top: auto;
+    padding-bottom: 20px;
+}
+
+.all-invited {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    color: #DC143C; /* Crimson for brightness */
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}

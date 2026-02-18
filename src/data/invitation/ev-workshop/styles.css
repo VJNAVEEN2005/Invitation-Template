@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400&family=Merriweather:wght@400;700;900&display=swap');
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #e6f3ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.poster-container {
+    width: 100%;
+    height: 100%;
+    max-width: 794px; /* A4 Width */
+    max-height: 1123px; /* A4 Height */
+    background-color: #bfe6ff; /* Light Sky Blue */
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden; /* Clean edges */
+}
+
+/* Background Pattern (Dotted) */
+.dots-top-right, .dots-bottom-left {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-image: radial-gradient(#005eff 1px, transparent 1px);
+    background-size: 10px 10px;
+    opacity: 0.3;
+}
+
+.dots-top-right {
+    top: -50px;
+    right: -50px;
+    transform: rotate(45deg);
+}
+
+.dots-bottom-left {
+    bottom: 50px;
+    left: -50px;
+}
+
+/* Report Label */
+.report-label {
+    background-color: #cfd8dc;
+    border: 2px solid #000;
+    padding: 5px 40px;
+    font-weight: 800;
+    font-size: 14px;
+    border-radius: 4px;
+    margin-top: 20px;
+    z-index: 10;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+}
+
+/* Header */
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 10px 30px;
+    box-sizing: border-box;
+    z-index: 10;
+}
+
+.logo {
+    width: 70px;
+    height: auto;
+}
+
+.header-text {
+    flex: 1;
+    text-align: center;
+    padding: 0 10px;
+}
+
+.org-title {
+    font-family: 'Merriweather', serif;
+    font-size: 22px;
+    color: #000080; /* Navy Blue */
+    font-weight: 900;
+    margin: 0;
+    text-transform: capitalize;
+}
+
+.org-subtitle {
+    font-family: 'Merriweather', serif;
+    font-size: 18px;
+    color: #333;
+    margin: 5px 0;
+}
+
+.address {
+    font-size: 11px;
+    margin: 5px 0;
+    color: #333;
+}
+
+.quote {
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 10px;
+    color: #000;
+}
+
+.quote-underline {
+    width: 60%;
+    height: 3px;
+    background-color: #000080;
+    margin: 5px auto 0;
+}
+
+/* Main Card */
+.main-card {
+    background-color: #000080; /* Dark Navy */
+    color: white;
+    width: 85%;
+    border-radius: 30px;
+    padding: 20px;
+    text-align: center;
+    margin: 10px 0;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    z-index: 10;
+}
+
+.card-subtitle {
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.card-title {
+    font-size: 28px;
+    font-weight: 800;
+    margin: 10px 0;
+    text-transform: uppercase;
+}
+
+.card-divider {
+    width: 50px;
+    height: 3px;
+    background-color: #fff;
+    margin: 0 auto 10px;
+}
+
+.card-topic {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 5px 0;
+}
+
+.card-code {
+    font-size: 14px;
+    margin: 10px 0 5px;
+}
+
+.card-date {
+    font-size: 14px;
+    margin: 0;
+}
+
+/* Details Section */
+.details-section {
+    text-align: center;
+    width: 100%;
+    z-index: 10;
+}
+
+.label {
+    font-size: 16px;
+    font-weight: 800;
+    margin: 10px 0 5px;
+}
+
+.org-name-blue {
+    font-family: 'Merriweather', serif;
+    font-size: 20px;
+    color: #000080;
+    font-weight: 900;
+    margin: 5px 0;
+}
+
+.center-name {
+    font-size: 18px;
+    font-weight: 800;
+    margin: 5px 0;
+}
+
+.details-text {
+    font-size: 13px;
+    margin: 2px 0;
+    color: #333;
+}
+
+.italic {
+    font-style: italic;
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+.division-name {
+    font-size: 15px;
+    font-weight: 800;
+    margin: 5px 0;
+}
+
+.blue-divider {
+    width: 100px;
+    height: 3px;
+    background-color: #005eff; /* Brighter Blue */
+    margin: 5px auto;
+}
+
+.assoc-text {
+    font-size: 14px;
+    margin: 10px 0 5px;
+}
+
+.dept-name {
+    font-size: 18px;
+    color: #000080;
+    font-weight: 900;
+    margin: 5px 0;
+}
+
+.college-name {
+    font-size: 18px;
+    font-weight: 800;
+    margin: 5px 0;
+}
+
+/* Images Row */
+.images-row {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 90%;
+    margin-top: 10px;
+    z-index: 10;
+    overflow: hidden; /* adjust */
+}
+
+.image-box {
+    flex: 1;
+    height: 120px;
+    border-radius: 15px;
+    overflow: hidden;
+    border: 2px solid white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Footer */
+.footer {
+    width: 100%;
+    background-color: #000080;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 12px;
+    margin-top: 20px; /* Space above footer */
+    z-index: 20;
+}

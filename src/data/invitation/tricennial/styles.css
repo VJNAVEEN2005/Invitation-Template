@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.tricennial-container {
+    width: 100%;
+    height: 100%;
+    /* Gradient background attempting to match the cyan/teal texture */
+    background: radial-gradient(circle, #67e8f9 0%, #06b6d4 100%);
+    padding: 20px;
+    box-sizing: border-box;
+    font-family: 'Merriweather', serif;
+    color: #0f172a; /* Dark slate for contrast */
+    display: flex;
+    flex-direction: column;
+}
+
+.tricennial-border {
+    border: 2px solid white;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1); /* Subtle overlay */
+    border-radius: 4px;
+    box-sizing: border-box;
+    position: relative;
+    text-align: center;
+}
+
+/* Header */
+.header-logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.uni-logo {
+    width: 80px;
+    height: auto;
+    object-fit: contain;
+    filter: drop-shadow(2px 4px 6px black);
+}
+
+.header-text {
+    margin-top: 10px;
+    width: 100%;
+}
+
+.uni-name {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #164e63; /* Dark Cyan/Teal */
+    margin: 0;
+    line-height: 1.2;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 0px rgba(255,255,255,0.5);
+}
+
+.uni-address {
+    font-size: 1.2rem;
+    margin: 5px 0 15px;
+    color: #334155;
+}
+
+.dept-name {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin: 10px 0;
+}
+
+/* Event Title */
+.event-title-block {
+    margin: 20px 0;
+}
+
+.series-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    font-style: italic;
+    margin: 10px 0 5px;
+    color: #0f172a;
+}
+
+.on-text {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.topic {
+    font-size: 2rem;
+    font-weight: 900;
+    font-style: italic;
+    color: #0f172a;
+    margin: 10px 0;
+    text-transform: uppercase;
+}
+
+/* Speaker */
+.speaker-section {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.speaker-photo-frame {
+    width: 180px;
+    height: 220px;
+    background: #cbd5e1;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.speaker-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.by-text {
+    font-size: 1.2rem;
+    margin: 5px 0;
+}
+
+.speaker-name {
+    font-size: 1.4rem;
+    font-weight: 900;
+    margin: 5px 0;
+    text-transform: uppercase;
+    color: #0f172a;
+}
+
+.speaker-desig {
+    font-size: 1.1rem;
+    margin: 5px 0;
+    line-height: 1.4;
+    color: #334155;
+    text-transform: uppercase;
+}
+
+/* Footer */
+.footer-info {
+    margin-top: auto; /* Push to bottom */
+    width: 100%;
+    padding-top: 20px;
+    border-top: 1px dashed rgba(255,255,255,0.3);
+}
+
+.branch-name {
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    color: #1e293b;
+}
+
+.event-meta {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.meta-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.time-meta {
+    font-size: 1.2rem;
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.icon {
+    font-size: 1.4rem;
+}

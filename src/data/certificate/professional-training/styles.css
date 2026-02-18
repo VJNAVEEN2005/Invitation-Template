@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&family=Open+Sans:wght@300;400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.certificate-wrapper {
+  width: 1056px;
+  height: 816px;
+  background: linear-gradient(135deg, #f0f9ff 0%, #ffffff 50%, #fff7ed 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Geometric Accents */
+.geometric-accent {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  opacity: 0.08;
+}
+
+.top-accent {
+  top: -50px;
+  right: -50px;
+  background: linear-gradient(135deg, #0ea5e9 0%, #06b6d4 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%);
+}
+
+.bottom-accent {
+  bottom: -50px;
+  left: -50px;
+  background: linear-gradient(135deg, #f97316 0%, #fb923c 100%);
+  clip-path: polygon(0 100%, 100% 100%, 0 0);
+}
+
+/* Main Certificate */
+.certificate-main {
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  border: 4px solid #0ea5e9;
+  border-radius: 8px;
+  padding: 50px 60px;
+  position: relative;
+  box-shadow: 
+    0 0 0 2px #ffffff,
+    0 0 0 6px #f0f9ff,
+    0 20px 60px rgba(14, 165, 233, 0.15);
+}
+
+/* Header Section */
+.header-section {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.modern-badge {
+  margin-bottom: 25px;
+}
+
+.badge-hexagon {
+  width: 90px;
+  height: 90px;
+  margin: 0 auto;
+  position: relative;
+  color: #0ea5e9;
+}
+
+.hex-svg {
+  width: 100%;
+  height: 100%;
+  filter: drop-shadow(0 4px 12px rgba(14, 165, 233, 0.3));
+}
+
+.badge-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 36px;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+.cert-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 52px;
+  font-weight: 800;
+  color: #0f172a;
+  letter-spacing: -1px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.title-underline {
+  width: 120px;
+  height: 4px;
+  background: linear-gradient(90deg, #0ea5e9, #06b6d4, #f97316);
+  margin: 0 auto;
+  border-radius: 2px;
+}
+
+/* Content Section */
+.content-section {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.intro-text {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  color: #64748b;
+  margin-bottom: 15px;
+  font-weight: 300;
+}
+
+.participant-name {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 44px;
+  font-weight: 700;
+  color: #0ea5e9;
+  margin-bottom: 25px;
+  padding: 0 20px;
+  outline: none;
+  display: inline-block;
+  min-width: 350px;
+  border-bottom: 3px solid #0ea5e9;
+  padding-bottom: 8px;
+}
+
+.participant-name:focus {
+  background: rgba(14, 165, 233, 0.05);
+}
+
+.completion-text {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  color: #64748b;
+  margin-bottom: 20px;
+  font-weight: 300;
+}
+
+.program-name {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  color: #0f172a;
+  margin-bottom: 35px;
+  line-height: 1.4;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: none;
+  padding: 10px 20px;
+}
+
+.program-name:hover {
+  background: rgba(14, 165, 233, 0.03);
+}
+
+/* Details Grid */
+.details-grid {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  margin-top: 35px;
+}
+
+.detail-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.detail-label {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  color: #94a3b8;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+}
+
+.detail-value {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  color: #0f172a;
+  font-weight: 600;
+  outline: none;
+  padding: 5px 15px;
+  border-radius: 4px;
+}
+
+.detail-value:hover {
+  background: rgba(14, 165, 233, 0.05);
+}
+
+/* Credentials Section */
+.credentials-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 50px;
+  padding: 0 20px;
+}
+
+.credential-block {
+  text-align: center;
+  flex: 1;
+}
+
+.credential-signature {
+  width: 180px;
+  height: 2px;
+  background: #0f172a;
+  margin: 0 auto 12px;
+}
+
+.credential-name {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  color: #0f172a;
+  font-weight: 600;
+  margin-bottom: 5px;
+  outline: none;
+  padding: 5px;
+}
+
+.credential-role {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+
+/* Certification Seal */
+.certification-seal {
+  flex: 0 0 auto;
+  margin: 0 40px;
+}
+
+.seal-outer {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #0ea5e9 0%, #06b6d4 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 20px rgba(14, 165, 233, 0.3);
+  border: 4px solid #ffffff;
+  position: relative;
+}
+
+.seal-outer::before {
+  content: '';
+  position: absolute;
+  inset: -8px;
+  border-radius: 50%;
+  border: 2px dashed #0ea5e9;
+  opacity: 0.3;
+}
+
+.seal-middle {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.seal-text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11px;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+/* Footer Bar */
+.footer-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(90deg, #0ea5e9 0%, #06b6d4 50%, #f97316 100%);
+  padding: 12px 60px;
+  text-align: center;
+}
+
+.cert-id {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  color: #ffffff;
+  font-weight: 600;
+  letter-spacing: 1px;
+  outline: none;
+  padding: 3px 8px;
+  border-radius: 3px;
+}
+
+.cert-id:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Editable Elements */
+[contenteditable="true"]:hover {
+  cursor: text;
+  background: rgba(14, 165, 233, 0.03);
+}
+
+[contenteditable="true"]:focus {
+  outline: 2px dashed rgba(14, 165, 233, 0.3);
+  outline-offset: 4px;
+  background: rgba(14, 165, 233, 0.05);
+}

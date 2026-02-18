@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Open+Sans:wght@400;600;700;800&display=swap');
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    /* Ensure no white space at bottom */
+    /* overflow: hidden;  <-- REMOVED to allow scrolling in editor */
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #90EE90; /* Fallback */
+    background: linear-gradient(135deg, #a8e6cf 0%, #dcedc1 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.invitation-container {
+    width: 100%;
+    height: 100%;
+    max-width: 794px; /* A4 Width */
+    max-height: 1123px; /* A4 Height */
+    background-color: #98FB98; /* PaleGreen */
+    padding: 30px;
+    box-sizing: border-box;
+    position: relative;
+    border-radius: 40px; /* Rounded corners as per image */
+    border: 1px solid #7bc77b;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #1a202c;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.logo-left img, .logo-right img {
+    width: 80px;
+    height: auto;
+}
+
+.header-text {
+    flex: 1;
+    padding: 0 10px;
+}
+
+.org-name {
+    font-family: 'Merriweather', serif;
+    font-size: 24px;
+    color: #00008B; /* DarkBlue */
+    margin: 0;
+    font-weight: 900;
+}
+
+.state-centre {
+    font-family: 'Merriweather', serif;
+    font-size: 18px;
+    color: #1a202c;
+    margin: 5px 0;
+}
+
+.address {
+    font-size: 12px;
+    line-height: 1.4;
+    margin: 5px 0;
+}
+
+.aegis {
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+/* Collaboration */
+.collaboration {
+    margin-bottom: 15px;
+}
+
+.collab-text {
+    font-weight: 800;
+    margin: 0 0 5px 0;
+    font-size: 14px;
+}
+
+.uni-name {
+    font-size: 20px;
+    color: #006400; /* DarkGreen */
+    margin: 0;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.dept-name {
+    font-size: 16px;
+    color: #006400;
+    margin: 5px 0;
+    font-weight: 600;
+}
+
+.chapter-name {
+    font-size: 14px;
+    color: #333;
+    margin: 0;
+}
+
+/* Invite Text */
+.invite-text {
+    font-family: 'Merriweather', serif;
+    font-style: italic;
+    font-weight: 700;
+    margin: 15px 0;
+    font-size: 16px;
+}
+
+/* Event Details */
+.event-details {
+    margin-bottom: 20px;
+}
+
+.event-title {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0 0 10px 0;
+    font-weight: 600;
+}
+
+.highlight-green {
+    color: #006400;
+    font-weight: 800;
+    font-size: 18px;
+}
+
+.event-time {
+    font-size: 14px;
+    font-weight: 700;
+    color: #1a202c;
+}
+
+/* Guest Sections */
+.guests-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.guest-block h3, .guests-of-honour h3, .in-presence h3 {
+    font-size: 16px;
+    font-weight: 800;
+    color: #1a202c;
+    margin: 0 0 5px 0;
+}
+
+.guest-name {
+    font-size: 20px;
+    margin: 5px 0;
+    font-weight: 800;
+}
+
+.guest-name.blue { color: #0000CD; } /* MediumBlue */
+.guest-name.red { color: #DC143C; } /* Crimson */
+.guest-name.magenta { color: #8B008B; } /* DarkMagenta */
+
+.guest-role {
+    font-size: 12px;
+    margin: 0;
+    line-height: 1.3;
+}
+
+.guest-action {
+    font-size: 11px;
+    font-style: italic;
+    margin: 3px 0 0 0;
+}
+
+/* Grids for multiple guests */
+.honour-grid, .presence-grid {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+}
+
+.honour-left, .honour-right, .presence-left, .presence-right {
+    flex: 1;
+}
+
+/* Footer */
+.footer {
+    margin-top: auto;
+    padding-bottom: 10px;
+}
+
+.all-invited {
+    color: #FF0000;
+    font-family: 'Merriweather', serif;
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0;
+}
+
+/* Decoration */
+.decoration-dots {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 150px;
+    height: 150px;
+    background-image: radial-gradient(circle, #006400 1px, transparent 1px);
+    background-size: 10px 10px;
+    opacity: 0.2;
+    border-bottom-right-radius: 40px;
+    pointer-events: none;
+}
