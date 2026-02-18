@@ -8,7 +8,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "predeploy": "set DEPLOY_TARGET=gh-pages&& npm run build",
+    "predeploy": "cross-env DEPLOY_TARGET=gh-pages npm run build",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
