@@ -58,7 +58,7 @@ const Privacy = () => {
 
           <section>
             <h2 className="text-2xl font-serif font-black text-[var(--color-dark)] mb-4">6. Contact</h2>
-            <p>If you have any questions about this Privacy Policy, please reach out via our <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-orange-500 hover:underline font-bold">GitHub repository</a>.</p>
+            <p>If you have any questions about this Privacy Policy, please reach out via our <a href="https://github.com/VJNAVEEN2005/Invitation-Template" target="_blank" rel="noopener noreferrer" className="text-orange-500 hover:underline font-bold">GitHub repository</a>.</p>
           </section>
         </div>
       </main>

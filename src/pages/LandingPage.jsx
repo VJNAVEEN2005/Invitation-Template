@@ -35,7 +35,7 @@ const LandingPage = () => {
         </div>
         
         <div className="hidden md:flex items-center gap-6">
-             <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 px-5 py-2.5 bg-white border border-slate-200 rounded-full text-sm font-bold text-slate-700 hover:border-slate-400 hover:shadow-md transition-all">
+             <a href="https://github.com/VJNAVEEN2005/Invitation-Template" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 px-5 py-2.5 bg-white border border-slate-200 rounded-full text-sm font-bold text-slate-700 hover:border-slate-400 hover:shadow-md transition-all">
                 <Github size={18} />
                 <span>Star on GitHub</span>
              </a>

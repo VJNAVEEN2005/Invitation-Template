@@ -84,7 +84,7 @@ const Terms = () => {
 
           <section>
             <h2 className="text-2xl font-serif font-black text-[var(--color-dark)] mb-4">9. Contact</h2>
-            <p>For questions about these Terms of Service, please visit our <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-orange-500 hover:underline font-bold">GitHub repository</a>.</p>
+            <p>For questions about these Terms of Service, please visit our <a href="https://github.com/VJNAVEEN2005/Invitation-Template" target="_blank" rel="noopener noreferrer" className="text-orange-500 hover:underline font-bold">GitHub repository</a>.</p>
           </section>
         </div>
       </main>
