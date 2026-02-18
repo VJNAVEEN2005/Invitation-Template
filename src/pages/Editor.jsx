@@ -195,8 +195,8 @@ const Editor = () => {
                 editor.setComponents(finalHtml);
                 const cssRules = editor.Parser.parseCss(finalCss);
                 editor.setStyle(cssRules);
-                
-                // Update local code view state too
+                // Format before setting local state for code view
+                const formatted = await formatCode(finalHtml, finalCss);
                 setCodeHtml(formatted.html);
                 setCodeCss(formatted.css);
                 
